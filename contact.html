@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]>
+<html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]>
+<html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]>
+<html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="en">
+<!--<![endif]-->
+<head>
+
+    <!-- Basic Page Needs -->
+    <meta charset="utf-8">
+    <title>Chalets des Bouleaux</title>
+    <meta name="author" content="D&oacute;nal Murtagh">
+
+    <!-- Mobile Specific Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="stylesheets/base.css">
+    <link rel="stylesheet" href="stylesheets/skeleton.css">
+    <link rel="stylesheet" href="stylesheets/layout.css">
+    <link rel="stylesheet" href="stylesheets/fonts.css">
+    <link rel="stylesheet" href="stylesheets/flexslider.css">
+    <link rel="stylesheet" href="stylesheets/mosaic.css">
+    <link rel="stylesheet" href="stylesheets/prettyPhoto.css">
+    <link rel="stylesheet" href="stylesheets/cdb.css">
+
+    <style type="text/css">
+        ul.line {
+            margin-bottom: 20px;
+        }
+
+        #directions input {
+            margin-bottom: 10px;
+        }
+
+        input[name="depart"] {
+            width: 100%;
+        }
+
+        #sidebar p {
+            text-align: justify;
+        }
+
+        #map img {
+            max-width: none;
+        }
+
+        @media only screen and (max-width: 767px) {
+            #directions {
+                margin-left: 10px;
+                margin-right: 20px;
+
+            }
+
+            ul.line {
+                margin-left: 10px;
+                margin-right: 10px;
+            }
+        }
+     </style>
+
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+</head>
+<body>
+
+<!-- Primary Page Layout -->
+<!-- Header -->
+<header>
+    <!-- topBar -->
+    <div class="wrapper">
+
+        <!-- branding -->
+        <section id="branding">
+            <div class="container">
+
+                <div id="logo" class="eight columns">
+                    <a href="index.html">
+                        <img src="images/logo.png"/>
+                        Vacation House for Rent - Demo by Mike and Brian
+                    </a>
+                </div>
+
+                <div id="fpq" class="three columns">
+                    <a href="http://www.pourvoiries.com" target="_blank">
+                        <img src="images/logo-fpq.png" alt="FPQ"/>
+                    </a>
+                </div>
+
+                <div id="innerHeader" class="five columns headerInfo">
+                    <p>
+                        Brian's Phone: +254 770 317 918<br>
+                        Mike's Phone: +254 772 242 995<br>
+                        <a href="mailto:bwandesky@gmail.com" id="email">bwandesky@gmail.com</a><br>
+                        <a href="mailto:michaelmungai2@gmail.com" id="email">michaelmungai2@gmail.com</a><br>
+                    </p>
+                </div>
+            </div>
+
+        </section>
+        <!-- end branding -->
+        <!-- navigation -->
+        <div id="navigation">
+            <div class="navigationBar">
+                <nav id="nav">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="chalets.html">Apartments</a></li>
+                        <li><a href="activites.html">Activities</a></li>
+                        <li><a href="contact.html" class="active">Contacts</a></li>
+                        <li><a href="photo-bouleau.html">Photo Gallery</a></li>
+                        <li><a href="tarifs.html">Pricing</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <!-- end navigation -->
+    </div>
+</header>
+
+<!-- end Header -->
+<div class="wrapper">
+    <!-- Header Image -->
+    <div id="headerImage" class="remove-lineheight white">
+        <div class="loading"><img src="images/cdb/map.jpg"/></div>
+    </div>
+    <!-- end Header Image -->
+</div>
+<!-- Main -->
+<div class="wrapper">
+    <div id="main" class="white">
+        <div class="container">
+            <div class="sixteen columns">
+                <h2 class="uppercase fittext">Contacts</h2>
+            </div>
+            <section class="eleven columns">
+                <div class="mapContainer box">
+                    <div id="map" class="gmap"></div>
+                </div>
+
+                <div id="msg-sent" class="info hide">Merci, votre message a été envoyé</div>
+
+                <p>Pour nous contacter, veuillez compléter les informations ci-dessous.</p>
+
+                <div class="box">
+                    <form id="contactForm" class="remove-bottom">
+                        <label for="form-name">Votre Nom</label>
+                        <div id="name-error" class="hide invalid">Veuillez fournir votre nom</div>
+                        <input type="text" name="name" id="form-name"/>
+
+                        <label for="form-email">Votre Courriel</label>
+                        <div id="email-error" class="hide invalid">Veuillez fournir une adresse électronique valide</div>
+                        <input type="text" name="email" id="form-email"/>
+
+                        <label for="form-msg">Votre Message</label>
+                        <div id="msg-error" class="hide invalid">Veuillez fournir votre message</div>
+                        <textarea rows="8" name="message" id="form-msg" cols="1"></textarea>
+
+                        <input type="submit" value="Envoyer" id="send" class="remove-bottom"/>
+                    </form>
+                </div>
+            </section>
+
+            <aside id="sidebar" class="five columns">
+
+                <h5 class="fancy">Propriétaires</h5>
+                <p>Luc Bondu et Sylvie Gougeon.</p>
+
+                <h5 class="fancy">Réservations et Renseignements</h5>
+                <p>Pour réserver ou obtenir de plus amples renseignements contactez-nous:</p>
+
+                <ul class="line">
+                    <li>Mike's Phone: <span class="phone">+254 772 242 995</span></li>
+                    <li>Brian's Phone: <span class="phone">+254 770 317 918</span></li>
+
+                    <li><a href="mailto:bwandesky@gmail.com">bwandesky@gmail.com</a></li>
+                </ul>
+
+                <h5 class="fancy">Our Address</h5>
+
+                <address>
+                    Chalets des Bouleaux<br>
+                    995 Route 309 Sud<br>
+                    Notre-Dame de Pontmain<br>
+                    Québec J0W 1S0
+                </address>
+
+                <p>
+                    L'emplacement de Notre-Dame de Pontmain est indiqué sur la carte. Pour voir une version agrandie de cette carte dans une autre fenêtre,
+                    <a href="http://maps.google.ca/maps?f=q&amp;source=s_q&amp;hl=fr&amp;geocode=&amp;q=notre-dame+de+pontmain&amp;sll=49.891235,-97.15369&amp;sspn=25.825869,79.101563&amp;ie=UTF8&amp;ll=46.339343,-75.344238&amp;spn=3.450898,14.0625&amp;z=7&amp;iwloc=addr" target="_blank">cliquez ici</a>.
+                </p>
+
+                <h5 class="fancy">Directions Routières</h5>
+                <p>
+                    Pour vous diriger vers Notre-Dame de Pontmain, suivez les liens suivants si vous êtes en provenance de
+                    <a href="http://maps.google.ca/maps?f=d&amp;source=s_d&amp;saddr=montreal,+canada&amp;daddr=notre-dame+de+pontmain,+canada&amp;hl=fr&amp;geocode=&amp;mra=ls&amp;sll=47.15984,2.988281&amp;sspn=13.596871,39.550781&amp;ie=UTF8&amp;z=8&amp;hl=fr" target="_blank">Montréal</a> ou
+                    <a href="http://maps.google.ca/maps?f=d&amp;source=s_d&amp;saddr=gatineau,+canada&amp;daddr=notre-dame+de+pontmain,+canada&amp;hl=fr&amp;geocode=&amp;mra=ls&amp;sll=46.04451,-74.63554&amp;sspn=1.734826,4.943848&amp;ie=UTF8&amp;z=9&amp;hl=fr" target="_blank">Gatineau</a>.
+                    En provenance de toutes autres directions, entrez votre adresse de départ ci-dessous.
+                </p>
+                <form id="directions" action="mail.php">
+                    <div id="address-error" class="hide invalid">Veuillez fournir une adresse de départ</div>
+                    <input id="depart" name="depart" type="text" placeholder="Adresse de Départ"/>
+                    <button type="submit">Directions</button>
+                </form>
+            </aside>
+        </div>
+    </div>
+    <!-- end Main -->
+    <!-- Bottom -->
+    <div class="wrapper">
+        <!-- Footer -->
+        <footer>
+            <div id="footer" class="darkGray">
+                <div class="container">
+                    <div class="fifteen columns">
+                        <ul id="footerlinks">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="chalets.html">Apartments</a></li>
+                            <li><a href="activites.html">Activities</a></li>
+                            <li><a href="contact.html" class="active">Contacts</a></li>
+                            <li><a href="photo-bouleau.html">Photo Gallery</a></li>
+                            <li><a href="tarifs.html">Pricing</a></li>
+                        </ul>
+                    </div>
+                    <div class="one column topbuttonContainer"><a href="#" class="topbutton">Top</a></div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</div>
+
+<script src="javascripts/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="http://maps.google.ca/maps/api/js?sensor=false&amp;language=fr"></script>
+<script type="text/javascript" src="javascripts/gmap3.min.js"></script>
+<script type="text/javascript">
+    $(function () {
+
+        var cdbAddress = "Chalet Des Bouleaux, Notre-Dame-de-Pontmain, QC";
+        var fadeTime = 400;
+
+        $('#map').gmap3({
+            marker: {
+                lat: 46.283363,
+                lng: -75.638174
+
+                // the position of the marker is more accurate when we use lat/lng instead of the address
+                // address: cdbAddress
+            },
+            map: {
+                options: {
+                    zoom: 7,
+                    mapTypeId: google.maps.MapTypeId.ROADMAP,
+                    mapTypeControl: true,
+                    mapTypeControlOptions: {
+                        style: google.maps.MapTypeControlStyle.DROPDOWN_MENU
+                    },
+                    scrollwheel: false,
+                    scaleControl: true,
+                    zoomControl: true,
+                    zoomControlOptions: {
+                        style: google.maps.ZoomControlStyle.LARGE
+                    }
+                }
+            }
+        });
+
+        // handler for the directions form
+        var endAddress = encodeURIComponent(cdbAddress);
+
+        $('#directions').submit(function() {
+
+            var startAddress = $('#depart').val();
+            startAddress = $.trim(startAddress);
+
+            if (startAddress) {
+                $('#address-error').fadeOut(fadeTime);
+                startAddress = encodeURIComponent(startAddress);
+                var googleMapsUrl = 'http://maps.google.ca/maps?saddr=' + startAddress + '&daddr=' + endAddress + '&hl=fr';
+                window.open(googleMapsUrl);
+            } else {
+                $('#address-error').fadeIn(fadeTime);
+            }
+            return false;
+        });
+
+        // handler for contact form
+        $(function (e) {
+            $("#contactForm").submit(function (e) {
+                var valid = true;
+
+                function validate(fieldValue, errorMsg) {
+                    if (!fieldValue) {
+                        $(errorMsg).fadeIn(fadeTime);
+                        valid = false;
+                    } else {
+                        $(errorMsg).fadeOut(fadeTime);
+                    }
+                }
+
+                var name = $.trim($("#form-name").val());
+                validate(name, '#name-error');
+
+                var text = $.trim($("#form-msg").val());
+                validate(text, '#msg-error');
+
+                var email = $.trim($("#form-email").val());
+
+                if (/(.+)@(.+){2,}\.(.+){2,}/.test(email)) {
+                    $('#email-error').fadeOut(fadeTime);
+                } else {
+                    $('#email-error').fadeIn(fadeTime);
+                    valid = false;
+                }
+
+                var dataString = 'name=' + name + '&email=' + email + '&text=' + text;
+
+                if (valid) {
+                    $.ajax({
+                        type: "POST",
+                        url: "mail.php",
+                        data: dataString,
+                        success: function () {
+                            $('#msg-sent').fadeIn(fadeTime);
+                        }
+                    });
+                    return false;
+                }
+
+                e.preventDefault();
+            });
+        });
+
+    });
+</script>
+<script src="javascripts/jquery.flexslider-min.js"></script>
+<script src="javascripts/jquery.prettyPhoto.js"></script>
+<script src="javascripts/mosaic.1.0.1.min.js"></script>
+<script src="javascripts/jquery.fittext.js"></script>
+<script src="javascripts/common.js"></script>
+
+</body>
+</html>

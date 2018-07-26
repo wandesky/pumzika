@@ -1,0 +1,189 @@
+#email {
+    color: #9FADB6;
+    text-transform: none;
+}
+
+#email:hover, #email:focus {
+    color: #D6BA00;
+}
+
+#logo a {
+    font-variant: small-caps;
+    font-size: 35px;
+    line-height: 40px;
+    color: #D6BA00;
+    font-weight: bold;
+}
+
+.captionContainer p {
+    text-transform: none;
+}
+
+#top p, .justify {
+    text-align: justify;
+}
+
+#footer {
+    padding-bottom: 0;
+}
+
+body {
+    font: 16px/19px 'PT Sans',Arial,sans-serif
+}
+
+footer {
+    margin-top: -10px;
+}
+
+.callout {
+    padding: 5px;
+    margin: 10px 0;
+}
+
+ul.arrow-marker {
+    padding-left: 20px;
+}
+
+ul.arrow-marker > li {
+    background: url("../images/icons/arrow_hover.png") no-repeat scroll transparent;
+    background-position: 0 50%;
+    padding: 0 0 0 25px;
+    transition: 0.3s ease;
+    margin-bottom: 5px;
+}
+
+ul.arrow-marker > li > a {
+    color: #3DA0BF;
+    text-decoration: none;
+    display: block;
+}
+
+table.zebra td:first-child {
+    font-size: 17px;
+}
+
+ul.line > li:hover {
+    padding-left: 0;
+}
+
+.list h5 {
+    font-weight: bold;
+    color: #3DA0BF;
+}
+
+.spacer {
+    text-transform: uppercase;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+.sidebarTitle {
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+.superscript {
+    vertical-align: super;
+    font-size: 65%;
+}
+
+.fancy {
+    color: #3DA0BF;
+    font-weight: bold;
+    text-shadow: 0 1px 0 #FFFFFF, 0 2px 0 #C1C5C8;
+    text-transform: uppercase;
+    text-align: left;
+}
+
+.clear-both {
+    clear: both;
+}
+
+address {
+    margin-bottom: 15px;
+}
+
+.hide {
+    display: none;
+}
+
+.invalid {
+    color: #FF4141;
+    font-size: 14px;
+}
+
+.info {
+    background-color: #3DA0BF;
+    padding: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    color: white;
+    text-align: center !important;
+}
+
+
+
+hr.divider {
+    margin-top: 20px;
+    margin-bottom: 20px
+}
+
+.emphasis {
+    background-color: #F4F4F4;
+    padding: 5px;
+}
+
+
+.gallery li {
+    margin-bottom: 20px;
+}
+
+.breadcrumb .container {
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.tagCloud {
+    margin: 0 10px;
+}
+
+.tagCloud a.active-page, .tagCloud a:hover {
+    background-color: #3DA0BF;
+    color: white;
+}
+
+ul.albums {
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+#logo {
+    text-align: center;
+}
+
+#innerHeader {
+    font-size: 14px;
+}
+
+#fpq, #innerHeader {
+    padding-top: 20px;
+}
+
+@media only screen and (max-width: 767px) {
+    #fpq {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 479px) {
+    #logo a {
+        font-size: 26px;
+        line-height: 26px;
+    }
+
+    #logo img {
+        width: 20px;
+        height: auto;
+    }
+}
